@@ -3,7 +3,10 @@ import "./App.css";
 import HeroSection from "./Components/HomeCompnents/HeroSection";
 import Header from "./Components/Layout/Header";
 import { useState } from "react";
-import Carousel from "./Components/AllInOneSolution/Carousel";
+
+import OurWorks from "./Components/HomeCompnents/OurWorks";
+import Footer from "./Components/Layout/Footer";
+// import Slider from "./Components/AllInOneSolution/Slider";
 function App() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -54,7 +57,7 @@ function App() {
               src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
               alt=""
             />
-            <div className="bg-gradient-to-b text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
+            <div className="bg-gradient-to-b lg:text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
               Our Service
             </div>{" "}
             <Loader />
@@ -67,24 +70,24 @@ function App() {
                 <span className="text-[#594FEE]">Strategic Excellence</span>
               </h2>
               <p className="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48">
-                We create digital solutions that push boundaries, elevate user
-                experiences, <br /> and drive business growth.
+                We create digital solutions that push boundaries, elevate user <br className="brm"/>
+                experiences, <br className="br"/> and drive <br className="brm"/> business growth.
               </p>
             </div>
-            <div className="aboutcard grid lg:grid-cols-3 justify-stretch  lg:gap-10">
-              <div className="card border bg-[#1F1F1F] rounded-lg p-10 flex flex-col gap-0 justify-center items-center">
+            <div className="aboutcard grid lg:grid-cols-3 justify-stretch px-6 lg:px-0 gap-6 lg:gap-10">
+              <div className="card border bg-[#1F1F1F] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
                 {" "}
-                <h2 className="m-0 p-0 leading-10 mb-5 ">+100</h2>{" "}
+                <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 ">+100</h2>{" "}
                 <p>Team Member</p>
               </div>
-              <div className="card border bg-[#1F1F1F] rounded-lg p-10 flex flex-col gap-0 justify-center items-center">
+              <div className="card border bg-[#1F1F1F] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
                 {" "}
-                <h2 className="m-0 p-0 leading-10 mb-5 ">+100</h2>{" "}
+                <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 ">+100</h2>{" "}
                 <p>Team Member</p>
               </div>
-              <div className="card border bg-[#1F1F1F] rounded-lg p-10 flex flex-col gap-0 justify-center items-center">
+              <div className="card border bg-[#1F1F1F] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
                 {" "}
-                <h2 className="m-0 p-0 leading-10 mb-5 ">+100</h2>{" "}
+                <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 ">+100</h2>{" "}
                 <p>Team Member</p>
               </div>
             </div>
@@ -99,24 +102,24 @@ function App() {
               src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
               alt=""
             />
-            <div className="bg-gradient-to-b text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
+            <div className="bg-gradient-to-b lg:text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
               About Us
             </div>{" "}
             <Loader />
           </div>
 
-          <section className="bg-transparent z-1 ">
-            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-              <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
+          <section className="bg-transparent z-1  ourservice-acordion-container">
+            <div className="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+              <h2 className="mb-4 font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
                 Driving Digital Evolution and <br />
                 <span className="text-[#594FEE]">Strategic Excellence</span>
               </h2>
               <p className="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48">
-                We create digital solutions that push boundaries, elevate user
-                experiences, <br /> and drive business growth.
+                We create digital solutions that push boundaries, elevate user <br className="brm"/>
+                experiences, <br className="br"/> and drive <br className="brm"/> business growth.
               </p>
             </div>
-            <div className="serviceacordionsection">
+            <div className="serviceacordionsection ourservice-acordion-container px-6">
               {/* Accordion Item 1 */}
               <div className="border-b border-slate-200">
                 <button
@@ -196,15 +199,14 @@ function App() {
             </div>
           </section>
         </div>
-
-
-
+         {/* Work section */}
+                  <OurWorks/> 
         {/* ----------------- */}
-        <Carousel />
-       
+                  {/* <Slider/> */}
         {/* --------------- */}
         <br />
         <br />
+        <Footer/>
       </div>
     </>
   );

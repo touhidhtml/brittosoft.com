@@ -32,10 +32,35 @@ nav{
   z-index: 99999 !important;
 }
 
-
-/* Marquee */
-marquee{
-  h5{
-    text-align: center;
+.brm{
+  display: none;
+}
+@media(max-width:768px){
+  .br{
+    display: none;
+  }
+  .brm{
+    display: block;
+  }
+  #carousel-img{
+    width: 320px !important;
+  }
+  .ourservice-acordion-container h3{
+    font-size: 14px !important;
+  }
+  h1{
+    font-weight: 500 !important;
+    font-size: 45px !important;
+    line-height: 45px !important;
+  }
+  h2{
+    font-weight: 500 !important;
+    font-size: 40px !important;
+  }
+  h3{
+    font-weight: 500 !important;
+    font-size: 30px !important;
   }
 }
+
+/* Marquee */

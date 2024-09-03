@@ -9,10 +9,10 @@ const HeroSection = () => {
         <section className="bg-transparent z-10 pt-">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
-              Turning Digital <br /> Dreams to Reality
+              Turning Digital <br /> Dreams to <br className="brm"/> Reality
             </h1>
             <p className="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48">
-            We build websites, drive traffic, and fuel conversions <br /> for industry leaders & startups..
+            We build websites, drive <br className="brm"/> traffic, and fuel conversions <br /> for industry leaders & startups..
             </p>
             <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <button
