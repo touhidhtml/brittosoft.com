@@ -9,13 +9,13 @@ const Header = () => {
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
-                src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-                className="h-8 rounded-full"
+                src="https://i.postimg.cc/MHrzBk0N/Britto-Soft-removebg-preview.png"
+                className="h-14 rounded-full"
                 alt="Britto Soft Logo"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Britto Soft.
-              </span>
+              </span> */}
             </a>
             <button
               data-collapse-toggle="navbar-default"

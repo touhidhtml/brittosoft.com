@@ -4,8 +4,6 @@ import HeroSection from "./Components/HomeCompnents/HeroSection";
 import Header from "./Components/Layout/Header";
 import { useState } from "react";
 import Carousel from "./Components/AllInOneSolution/Carousel";
-// import Slider from "./Components/AllInOneSolution/Slider";
-// import { Carosel } from "./Components/AllInOneSolution/Carousel";
 function App() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -199,17 +197,11 @@ function App() {
           </section>
         </div>
 
-        {/* All In One Solutions Section */}
-        <div>
-          {/* <Slider/> */}
-        </div>
-
-        
-
 
 
         {/* ----------------- */}
-                  <Carousel/>
+        <Carousel />
+       
         {/* --------------- */}
         <br />
         <br />

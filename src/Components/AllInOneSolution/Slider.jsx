@@ -4,6 +4,19 @@ const Slider = () => {
     
   return (
     <div>
+        <section className="bg-transparent z-1 ">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+              <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
+                Driving Digital Evolution and <br />
+                <span className="text-[#594FEE]">Strategic Excellence</span>
+              </h2>
+              <p className="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48">
+                We create digital solutions that push boundaries, elevate user
+                experiences, <br /> and drive business growth.
+              </p>
+            </div>
+            
+          </section>
       {/* All In One Solutions Section */}
       <div className="aboutsection flex flex-col items-center bg-black py-20">
         <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center border rounded-lg">
