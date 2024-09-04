@@ -1,11 +1,9 @@
 
 const Pricing = () => {
     return (
-        <div>
-            <div className="flex items-center justify-center font-extrabold text-lg">
-                Comming Soon
-            </div>
-        </div>
+        <div className="flex w-screen h-screen justify-center items-center">
+        <h1>Coming Soon</h1>
+     </div>
     );
 };
 

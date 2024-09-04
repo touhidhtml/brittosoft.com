@@ -15,8 +15,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-graph{
+  background: url(https://i.postimg.cc/XvVwJWQY/graph-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .active{
-  color: #2b0e9d;
+  color: #FFC837;
 }
 nav{
   border: 0.1px solid white;
@@ -41,6 +47,9 @@ nav {
   display: none;
 }
 @media (max-width: 768px) {
+  .bg-graph{
+    background: transparent;
+  }
   .br {
     display: none;
   }
@@ -70,6 +79,12 @@ nav {
   #sliderimg {
     width: 384px !important;
     max-width: 200px !important;
+  }
+  .contact-heading{
+    font-size: 40px !important;
+    font-weight: 600;
+    color: #A2A6AD;
+    line-height: 55px;
   }
 }
 

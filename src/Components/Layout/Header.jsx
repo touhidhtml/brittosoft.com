@@ -1,3 +1,4 @@
+import { AlignJustify } from "lucide-react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -10,55 +11,57 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-center sticky top-0 lg:pt-5 rounded-[40px] z-10">
-      <nav className="lg:bg-black/30 bg-black border-[1px] border-gray-800  lg:backdrop-blur-sm lg:w-fit px-2 w-full rounded-[40px] z-[999]">
+      <nav className="lg:bg-black/30 lg:backdrop-blur-sm md:bg-black/30 md:backdrop-blur-sm bg-black border-[1px] border-gray-800 lg:w-fit px-2 w-full rounded-[40px] z-[999]">
         <div>
           <div className="max-w-screen-xl flex flex-wrap items-center gap-2 justify-between lg:justify-center mx-auto p-2 lg:p-4">
+            
+            {/* Mobile Logo */}
             <NavLink
               to={"/"}
-              className="flex items-center space-x-3 rtl:space-x-reverse pr-2 lg:border-r-[1px] border-gray-800"
+              className="flex items-center space-x-3 rtl:space-x-reverse pr-2 md:hidden lg:hidden"
             >
               <img
-                src="https://i.postimg.cc/MHrzBk0N/Britto-Soft-removebg-preview.png"
-                className="lg:h-8 h-8 "
+                src="https://i.postimg.cc/PqSKhngv/Britto.png"
+                className="h-8"
                 alt="Britto Soft Logo"
               />
             </NavLink>
+
+            {/* Mobile Menu Button */}
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              className="inline-flex items-center  w-10 h-10 justify-center text-sm  rounded-lg md:hidden  focus:outline-none focus:ring-2  text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+              className="inline-flex items-center w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
               aria-controls="navbar-default"
               aria-expanded={isMobileMenuOpen ? "true" : "false"}
               onClick={toggleMobileMenu}
             >
               <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-4 h-w-4"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
+              <AlignJustify />
             </button>
-            <div
-              className={`${
-                isMobileMenuOpen ? "block" : "hidden"
-              } w-full md:block md:w-auto`}
-              id="navbar-default"
-            >
-              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700">
+
+            {/* Desktop Menu with Logo */}
+            <div className="hidden md:block md:w-auto">
+              <ul className="font-medium flex md:gap-2 lg:gap-6 flex-row  rtl:space-x-reverse items-center">
+                
+                {/* Logo as part of Desktop Menu */}
                 <li>
                   <NavLink
                     to={"/"}
-                    className="block py-2 px-3 rounded   md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                    className="flex items-center space-x-3 rtl:space-x-reverse pr-6 lg:border-r-[1px] border-gray-800"
+                  >
+                    <img
+                      src="https://i.postimg.cc/PqSKhngv/Britto.png"
+                      className="h-8"
+                      alt="Britto Soft Logo"
+                    />
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink
+                    to={"/"}
+                    className="block py-2 px-3 rounded text-white hover:text-blue-500"
                     aria-current="page"
                   >
                     Home
@@ -67,7 +70,7 @@ const Header = () => {
                 <li>
                   <NavLink
                     to={"/about"}
-                    className="block py-2 px-3 rounded   md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                    className="block py-2 px-3 rounded text-white hover:text-blue-500"
                   >
                     About
                   </NavLink>
@@ -75,7 +78,7 @@ const Header = () => {
                 <li>
                   <NavLink
                     to={"/service"}
-                    className="block py-2 px-3 rounded   md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                    className="block py-2 px-3 rounded text-white hover:text-blue-500"
                   >
                     Services
                   </NavLink>
@@ -83,24 +86,94 @@ const Header = () => {
                 <li>
                   <NavLink
                     to={"/pricing"}
-                    className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                    className="block py-2 px-3 rounded text-white hover:text-blue-500"
                   >
                     Pricing
                   </NavLink>
                 </li>
-                <li className="pr-2 border-r-[1px] border-gray-800"> 
+                <li className="pr-2 border-r-[1px] border-gray-800">
                   <NavLink
                     to={"/contact"}
-                    className="block py-2 px-3 rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent "
+                    className="block py-2 px-3 rounded text-white hover:text-blue-500"
                   >
                     Contact
                   </NavLink>
                 </li>
                 <li>
-                  <a className="lg:bg-blue-600 px-3 lg:px-8 lg:py-2 rounded-[20px]" target="_blank" href="https://facebook.com">Get Started</a>
+                  <a
+                    className="bg-[#5148D9] lg:px-4 py-1 px-2 rounded-[20px]"
+                    target="_blank"
+                    href="https://facebook.com"
+                  >
+                    Set Meeting
+                  </a>
                 </li>
               </ul>
             </div>
+
+            {/* Mobile Menu */}
+            {isMobileMenuOpen && (
+              <div className="block md:hidden w-full" id="navbar-default">
+                <ul className="font-medium flex flex-col p-4 mt-4 border rounded-lg bg-black/90 border-gray-700">
+                  <li>
+                    <NavLink
+                      to={"/"}
+                      className="block py-2 px-3 rounded text-white hover:bg-gray-700"
+                      aria-current="page"
+                      onClick={toggleMobileMenu}
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to={"/about"}
+                      className="block py-2 px-3 rounded text-white hover:bg-gray-700"
+                      onClick={toggleMobileMenu}
+                    >
+                      About
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to={"/service"}
+                      className="block py-2 px-3 rounded text-white hover:bg-gray-700"
+                      onClick={toggleMobileMenu}
+                    >
+                      Services
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to={"/pricing"}
+                      className="block py-2 px-3 rounded text-white hover:bg-gray-700"
+                      onClick={toggleMobileMenu}
+                    >
+                      Pricing
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to={"/contact"}
+                      className="block py-2 px-3 rounded text-white hover:bg-gray-700"
+                      onClick={toggleMobileMenu}
+                    >
+                      Contact
+                    </NavLink>
+                  </li>
+                  <li>
+                    <a
+                      className="bg-[#5148D9] px-4 py-2 rounded-[20px] text-white"
+                      target="_blank"
+                      href="https://facebook.com"
+                      onClick={toggleMobileMenu}
+                    >
+                      Set Meeting
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </nav>

@@ -3,15 +3,18 @@ import TestimonialSlider from "../Components/Testimonals/TestimonialSlider";
 const Contact = () => {
   return (
     <div>
-      <section className=" bg-transparent">
-        <div className="py-8 lg:py-16 px-4 lg:px-0 mx-auto max-w-screen-md">
-          <h6 className="text-center text-white contact-heading">
-            Contact With Us
-          </h6>
-          <p className="mb-8 lg:mb-8  text-center text-gray-400 ">
-          Talk with our experts and learn what we could do for you
-          </p>
-          <form action="#" className="space-y-3 ">
+      <section className="py-8 lg:py-0 lg:my-16 px-4 lg:px-0 mx-auto max-w-screen-md bg-graph">
+        <div className=" bg-[#000000b4]">
+          <div className="bg-black">
+            <h6 className="text-center  text-white contact-heading">
+              Contact With Us
+            </h6>
+            <p className="mb-8 lg:mb-8  text-center text-gray-400 ">
+              Talk with our experts and learn what <br className="brm" /> we
+              could do for you
+            </p>
+          </div>
+          <form action="#" className="space-y-3 bg-black">
             <div className="grid grid-cols-2 gap-3 ">
               <div>
                 <input
@@ -33,7 +36,6 @@ const Contact = () => {
               </div>
             </div>
             <div className="sm:col-span-2">
-
               <textarea
                 id="message"
                 rows="6"
@@ -48,9 +50,11 @@ const Contact = () => {
               Send message
             </button>
           </form>
+          <div className="bg-black">
+            <TestimonialSlider />
+          </div>
         </div>
       </section>
-      <TestimonialSlider/>
     </div>
   );
 };
