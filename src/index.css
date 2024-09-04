@@ -58,6 +58,7 @@ nav {
   h2 {
     font-weight: 500 !important;
     font-size: 40px !important;
+    color: #00000078;
   }
   h3 {
     font-weight: 500 !important;
@@ -85,4 +86,16 @@ nav {
   font-weight: 600;
   color: #A2A6AD;
   line-height: 55px;
+}
+
+
+/* About page css------------- */
+.aboutpage h1{
+  line-height: 84px !important;
+}
+
+.aboutpage .gradient-bg {
+  background-image: linear-gradient(to bottom, #444cdf, #2b0e9d, #2b0a77, #0e0234, #000000) !important;
+  display: inline-block !important; /* Ensure the gradient is visible */
+  /* Optional: Adjust padding as needed */
 }

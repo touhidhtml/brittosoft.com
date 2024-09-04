@@ -1,12 +1,14 @@
-import BlourBackground from "../BlourBackground/BlourBackground";
+// import BlourBackground from "../BlourBackground/BlourBackground";
+import VideoBackground from "../BlourBackground/VideoBackground";
 
 const HeroSection = () => {
   return (
     <>
-      <BlourBackground />
+      {/* <BlourBackground /> */}
+      <VideoBackground/>
       {/* Hero Section Starts Here------------------------- */}
       <div>
-        <section className="bg-transparent z-10 pt-">
+        <section className="bg-transparent z-10 bg-[#0000005e] ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
               Turning Digital <br /> Dreams to <br className="brm"/> Reality
