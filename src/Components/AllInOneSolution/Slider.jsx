@@ -1,47 +1,109 @@
-import { useState, useEffect } from "react";
-
 const Slider = () => {
-  // Array of image URLs
-  const slides = [
-    "https://i0.wp.com/wordpressfoundation.org/content/uploads/2022/02/WordPress-logotype-wmark.png",
-    "https://logos-world.net/wp-content/uploads/2023/08/React-Logo.png",
-    "https://cdn.freebiesupply.com/logos/large/2x/php-logo-png-transparent.png",
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png",
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png",
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-  ];
-
-  const [index, setIndex] = useState(0);
-
-  // Increment the index every 2 seconds, reset if it exceeds the slide length
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 2000); // Adjust the interval as needed
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [slides.length]);
-
   return (
-    <div className="slider overflow-hidden w-full">
-      <div className="slide-track flex animate-scroll">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            className={`slide w-fit h-fit flex-shrink-0 ${
-              index === slideIndex ? "active" : ""
-            }`}
-          >
-            <img className="w-20" src={slide} alt={`Slide ${slideIndex + 1}`} />
-          </div>
-        ))}
-        {/* Duplicate slides for infinite scrolling */}
-        {slides.map((slide, slideIndex) => (
-          <div key={`duplicate-${slideIndex}`} className="slide w-64 h-24 flex-shrink-0">
-            <img className="w-20" src={slide} alt={`Slide ${slideIndex + 1}`} />
-          </div>
-        ))}
+    <div>
+      <div className="relative  flex overflow-x-hidden w-[90%] m-auto">
+        <div className="flex  animate-marquee group-hover:paused">
+          <span className="relative bg-white border shadow-sm rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+
+          <span className="relative bg-white border shadow-lg rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+          <span className="relative bg-white border shadow-lg rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+          <span className="relative bg-white border shadow-lg rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div className="absolute top-0 flex  animate-marquee2 group-hover:paused">
+          <span className="relative bg-white border shadow-sm rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+
+          <span className="relative bg-white border shadow-lg rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+          <span className="relative bg-white border shadow-lg rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+          <span className="relative bg-white border shadow-lg rounded-2xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70  mx-8">
+            <img
+              className="w-96 h-48 rounded-xl"
+              src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Card Image"
+            />
+            <div className="absolute bottom-0 start-0 end-0 text-center">
+              <div className="p-4 md:p-5">
+                <h3 className="text-2xl font-bold text-white">Card title</h3>
+              </div>
+            </div>
+          </span>
+        </div>
       </div>
     </div>
   );

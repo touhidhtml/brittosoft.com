@@ -13,7 +13,7 @@ const OurWorks = () => {
       title: "Project Two",
       description: "A brief description of Project Two.",
       imgSrc:
-        "https://framerusercontent.com/images/LLOWx6bDBZ2xOFWg5KzZOmTMU.jpg",
+        "https://framerusercontent.com/images/SaJAX2iD0yn0TVekXN6GHJqBiVo.jpg?scale-down-to=512",
       link: "#",
     },
     {
@@ -74,6 +74,7 @@ const OurWorks = () => {
           </div>{" "}
           <Loader />
         </div>
+
         {/* <div className="bg-transparent z-1 ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
@@ -88,11 +89,11 @@ const OurWorks = () => {
         </div> */}
 
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 px-6 lg:px-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6 px-6 lg:px-20">
             {htmlprojects.map((project, index) => (
               <div
                 key={index}
-                className="card bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden"
+                className="card shadow-lg rounded-lg overflow-hidden"
               >
                 <img
                   src={project.imgSrc}
@@ -100,16 +101,17 @@ const OurWorks = () => {
                   className="w-full h-fit object-cover"
                 />
                 <div className="card-body p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                  <h3 className="text-xl font-semibold text-white mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  <p className="text-gray-300 mb-4">
                     {project.description}
                   </p>
                 </div>
               </div>
             ))}
           </div>
+          
         </div>
       </div>
     </div>

@@ -5,10 +5,10 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-center border-b gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
             <div className="">
-              <h6 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h6 className="mb-6 text-sm font-semibold  uppercase text-white">
                 Company
               </h6>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
                     About
@@ -32,10 +32,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h6 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h6 className="mb-6 text-sm font-semibold uppercase text-white">
                 Help center
               </h6>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Discord Server
@@ -59,10 +59,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h6 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h6 className="mb-6 text-sm font-semibold uppercase text-white">
                 Legal
               </h6>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Privacy Policy
@@ -81,10 +81,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="">
-              <h6 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h6 className="mb-6 text-sm font-semibold  uppercase text-white">
                 Download
               </h6>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     iOS

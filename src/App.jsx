@@ -6,6 +6,8 @@ import { useState } from "react";
 
 import OurWorks from "./Components/HomeCompnents/OurWorks";
 import Footer from "./Components/Layout/Footer";
+import INtigrations from "./Components/Intigrations/INtigrations";
+import Slider from "./Components/AllInOneSolution/Slider";
 // import Slider from "./Components/AllInOneSolution/Slider";
 function App() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -202,7 +204,8 @@ function App() {
          {/* Work section */}
                   <OurWorks/> 
         {/* ----------------- */}
-                  {/* <Slider/> */}
+                  <Slider/> 
+                  <INtigrations/>
         {/* --------------- */}
         <br />
         <br />
