@@ -61,6 +61,22 @@ nav{
     font-weight: 500 !important;
     font-size: 30px !important;
   }
+  #sliderimg{
+    width: 384px !important;
+    max-width: 200px !important;
+  }
 }
 
 /* Marquee */
+/* Assuming this CSS is in a file imported into your project */
+@media (max-width: 640px) { /* Tailwind's sm breakpoint */
+  .animate-circle {
+    --circle-translate: 100px !important;
+  }
+}
+
+
+  .animate-circle {
+    --circle-translate: 200px;
+  }
+

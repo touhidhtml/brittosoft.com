@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,8 +13,8 @@ const Header = () => {
       <nav className="bg-black/30 backdrop-blur-sm lg:w-[60%] w-full rounded-[40px] z-[999]">
         <nav>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a
-              href="/"
+            <NavLink
+              to={"/"}
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
@@ -21,7 +22,7 @@ const Header = () => {
                 className="lg:h-14 h-8 rounded-full"
                 alt="Britto Soft Logo"
               />
-            </a>
+            </NavLink>
             <button
               data-collapse-toggle="navbar-default"
               type="button"
@@ -55,45 +56,45 @@ const Header = () => {
             >
               <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700">
                 <li>
-                  <a
-                    href="#"
+                  <NavLink
+                    to={"/"}
                     className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent  md:p-0 text-white md:text-blue-500"
                     aria-current="page"
                   >
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <NavLink
+                    to={"/"}
                     className="block py-2 px-3 rounded   md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                   >
                     About
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <NavLink
+                    to={"/service"}
                     className="block py-2 px-3 rounded   md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                   >
                     Services
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
+                  <NavLink
                     href="#"
                     className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                   >
                     Pricing
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <NavLink
+                    to={"/"}
                     className="block py-2 px-3 rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                   >
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>

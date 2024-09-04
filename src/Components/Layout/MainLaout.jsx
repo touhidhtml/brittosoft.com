@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
 import Header from "./Header";
 
 const MainLaout = () => {
     return (
         <div>
             <Header/>
-            adsfasdfasdf
+            <Outlet/>
         </div>
     );
 };
