@@ -27,19 +27,19 @@ const About = () => {
             </p>
           </div>
           <div className="aboutcard grid lg:grid-cols-3 justify-stretch px-6 lg:px-0 gap-6 lg:gap-10">
-            <div className="card border bg-[#1F1F1F] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
+            <div className="card border bg-[#1f1f1f00] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
               {" "}
-              <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 ">+100</h2>{" "}
+              <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 text-white">+100</h2>{" "}
               <p>Team Member</p>
             </div>
-            <div className="card border bg-[#1F1F1F] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
+            <div className="card border bg-[#1f1f1f00] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
               {" "}
-              <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 ">+100</h2>{" "}
+              <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 text-white">+100</h2>{" "}
               <p>Team Member</p>
             </div>
-            <div className="card border bg-[#1F1F1F] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
+            <div className="card border bg-[#1f1f1f00] rounded-lg p-6 lg:p-10 flex flex-col gap-0 justify-center items-center">
               {" "}
-              <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 ">+100</h2>{" "}
+              <h2 className="m-0 p-0 leading-10 mb-2 lg:mb-5 text-white">+100</h2>{" "}
               <p>Team Member</p>
             </div>
           </div>

@@ -1,3 +1,5 @@
+import TestimonialSlider from "../Components/Testimonals/TestimonialSlider";
+
 const Contact = () => {
   return (
     <div>
@@ -48,6 +50,7 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <TestimonialSlider/>
     </div>
   );
 };

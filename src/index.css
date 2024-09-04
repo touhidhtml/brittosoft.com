@@ -15,6 +15,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.active{
+  color: #2b0e9d;
+}
 nav{
   border: 0.1px solid white;
 }

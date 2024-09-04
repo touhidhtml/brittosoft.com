@@ -9,6 +9,7 @@ import App from './App';
 import Service from './Pages/Service';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
+import Pricing from './Pages/Pricing';
 import MainLaout from './Components/Layout/MainLaout';
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element:  <Contact/>,
+      },
+      {
+        path: "/pricing",
+        element:  <Pricing/>,
       },
     ],
   },
