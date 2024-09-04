@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
 :root {
   font-family: "Inter", system-ui;
   /* font-family: "Inter Tight", sans-serif; */
@@ -15,68 +15,74 @@
 @tailwind components;
 @tailwind utilities;
 
-
-h1{
+nav{
+  border: 0.1px solid white;
+}
+h1 {
   font-weight: 500 !important;
   font-size: 120px !important;
 }
-h2{
+h2 {
   font-weight: 500 !important;
   font-size: 90px !important;
 }
-h3{
+h3 {
   font-weight: 500 !important;
   font-size: 30px !important;
 }
-nav{
+nav {
   z-index: 99999 !important;
 }
 
-.brm{
+.brm {
   display: none;
 }
-@media(max-width:768px){
-  .br{
+@media (max-width: 768px) {
+  .br {
     display: none;
   }
-  .brm{
+  .brm {
     display: block;
   }
-  #carousel-img{
+  #carousel-img {
     width: 320px !important;
   }
-  .ourservice-acordion-container h3{
+  .ourservice-acordion-container h3 {
     font-size: 14px !important;
   }
-  h1{
+  h1 {
     font-weight: 500 !important;
     font-size: 45px !important;
     line-height: 45px !important;
   }
-  h2{
+  h2 {
     font-weight: 500 !important;
     font-size: 40px !important;
   }
-  h3{
+  h3 {
     font-weight: 500 !important;
     font-size: 30px !important;
   }
-  #sliderimg{
+  #sliderimg {
     width: 384px !important;
     max-width: 200px !important;
   }
 }
 
-/* Marquee */
-/* Assuming this CSS is in a file imported into your project */
-@media (max-width: 640px) { /* Tailwind's sm breakpoint */
+/* All in one services */
+@media (max-width: 640px) {
   .animate-circle {
     --circle-translate: 100px !important;
   }
 }
+.animate-circle {
+  --circle-translate: 200px;
+}
 
 
-  .animate-circle {
-    --circle-translate: 200px;
-  }
-
+.contact-heading{
+  font-size: 56px;
+  font-weight: 600;
+  color: #A2A6AD;
+  line-height: 55px;
+}
