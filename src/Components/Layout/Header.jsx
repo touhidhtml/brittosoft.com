@@ -10,10 +10,10 @@ const Header = () => {
   };
 
   return (
-    <div className="lg:flex w-full lg:flex-col sticky lg:items-center lg:fixed top-0 lg:pt-5 rounded-[40px] z-10">
-      <nav className="lg:bg-black/30 lg:backdrop-blur-sm md:bg-black/30 md:backdrop-blur-sm bg-black border-[1px] border-gray-800 lg:w-fit px-2 w-full rounded-[40px] z-[999]">
+    <div className="lg:flex lg:flex-col lg:items-center lg:fixed md:flex md:flex-col md:items-center md:fixed lg:pt-5 w-full sticky  top-0 rounded-[40px] z-10">
+      <nav className="lg:bg-black/30 lg:backdrop-blur-sm md:bg-black/30 md:backdrop-blur-sm bg-black border-[1px] border-gray-800 lg:w-fit md:w-fit px-2 w-full rounded-[40px] z-[999]">
         <div>
-          <div className="max-w-screen-xl flex flex-wrap items-center gap-2 justify-between lg:justify-center mx-auto p-2 lg:p-4">
+          <div className="max-w-screen-xl flex flex-wrap items-center gap-2 justify-between lg:justify-center md:justify-center mx-auto p-2 lg:p-4">
             
             {/* Mobile Logo */}
             <NavLink

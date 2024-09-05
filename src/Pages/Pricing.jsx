@@ -14,8 +14,8 @@ const Pricing = () => {
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(null);
   const [submitted, setSubmitted] = useState(false);
-  
-/* Get data form json file using axios--------- */
+
+  /* Get data form json file using axios--------- */
   useEffect(() => {
     axios
       .get("./services.json")
@@ -132,7 +132,7 @@ const Pricing = () => {
         </div>
       </section>
 
-      <div className="mt-8">
+      <div className="mt-8 w-screen md:w-fit lg:w-fit mb-16">
         {submitted && (
           <PriceTable
             service={service}
