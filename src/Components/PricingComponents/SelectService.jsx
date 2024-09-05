@@ -10,7 +10,7 @@ const SelectService = ({ value, onChange }) => {
           value={value} // Controlled value
           onChange={onChange} // Handle change
         >
-          <option value="">Choose a service</option>
+          <option value="Development">Choose a service</option>
           <option value="Web Design">Web Design</option>
           <option value="Web Development">Web Development</option>
           <option value="WordPress Bug Fixing">WordPress Bug Fixing</option>
