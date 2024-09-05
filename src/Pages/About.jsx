@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="aboutpage">
       {/* about-hero..... */}
-     <div className="hero relative bg-[#00000094]  text-white lg:h-screen h-[200px] flex justify-center items-center">
+     <div className="hero relative bg-[#0000000e]  text-white lg:h-screen h-[200px] flex justify-center items-center">
         <VideoBackground/>
         <div className="hero-content text-center py-14 ">
           <div className="">
