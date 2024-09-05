@@ -9,10 +9,10 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-col items-center sticky top-0 pt-5 rounded-[40px] z-10">
-      <nav className="bg-black/30 border-[1px] border-gray-800  backdrop-blur-sm lg:w-fit px-2 w-full rounded-[40px] z-[999]">
+    <div className="flex flex-col items-center sticky top-0 lg:pt-5 rounded-[40px] z-10">
+      <nav className="lg:bg-black/30 bg-black border-[1px] border-gray-800  lg:backdrop-blur-sm lg:w-fit px-2 w-full rounded-[40px] z-[999]">
         <div>
-          <div className="max-w-screen-xl flex flex-wrap items-center gap-2 justify-between lg:justify-center mx-auto p-4">
+          <div className="max-w-screen-xl flex flex-wrap items-center gap-2 justify-between lg:justify-center mx-auto p-2 lg:p-4">
             <NavLink
               to={"/"}
               className="flex items-center space-x-3 rtl:space-x-reverse pr-2 lg:border-r-[1px] border-gray-800"
@@ -26,7 +26,7 @@ const Header = () => {
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden  focus:outline-none focus:ring-2  text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+              className="inline-flex items-center  w-10 h-10 justify-center text-sm  rounded-lg md:hidden  focus:outline-none focus:ring-2  text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
               aria-controls="navbar-default"
               aria-expanded={isMobileMenuOpen ? "true" : "false"}
               onClick={toggleMobileMenu}
@@ -58,7 +58,7 @@ const Header = () => {
                 <li>
                   <NavLink
                     to={"/"}
-                    className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent  md:p-0 text-white md:text-blue-500"
+                    className="block py-2 px-3 rounded   md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                     aria-current="page"
                   >
                     Home
@@ -82,7 +82,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink
-                    href="#"
+                    to={"/pricing"}
                     className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                   >
                     Pricing
