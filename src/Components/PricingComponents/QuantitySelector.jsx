@@ -19,7 +19,7 @@ const QuantitySelector = ({ quantity, setQuantity }) => {
         {/* Decrease button */}
         <div 
           onClick={handleDecrease} 
-          className={`shadow-sm text-lg rounded-lg block py-2 px-10 cursor-pointer bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-light ${quantity <= 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`shadow-sm text-lg rounded-lg block py-2 px-10 cursor-pointer bg-[#18181B] border-none text-[#A2A6AD] focus:ring-primary-500 shadow-sm-light ${quantity <= 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
           aria-disabled={quantity <= 1}
         >
           <CircleMinus />
@@ -30,13 +30,13 @@ const QuantitySelector = ({ quantity, setQuantity }) => {
           type="number"
           value={quantity}
           readOnly
-          className="shadow-sm text-center text-lg rounded-lg focus:ring-primary-500 outline-none focus:border-0 block w-full p-2.5 bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-light"
+          className="shadow-sm text-center text-lg rounded-lg focus:ring-primary-500 outline-none focus:border-0 block w-full p-2.5 bg-[#18181B] border-none text-[#A2A6AD] focus:ring-primary-500 shadow-sm-light"
         />
 
         {/* Increase button */}
         <div 
           onClick={handleIncrease}
-          className="shadow-sm text-lg rounded-lg block py-2 px-10 cursor-pointer bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-light"
+          className="shadow-sm text-lg rounded-lg block py-2 px-10 cursor-pointer bg-[#18181B] border-none text-[#A2A6AD] focus:ring-primary-500 shadow-sm-light"
         >
           <CirclePlus />
         </div>

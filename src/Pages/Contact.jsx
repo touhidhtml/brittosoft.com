@@ -3,7 +3,7 @@ import TestimonialSlider from "../Components/Testimonals/TestimonialSlider";
 const Contact = () => {
   return (
     <div>
-      <section className="py-8 lg:py-0 lg:my-16 px-4 lg:px-0 mx-auto max-w-screen-md bg-graph">
+      <section className="py-8 lg:py-0 lg:mb-16 mt-32 px-4 lg:px-0 mx-auto max-w-screen-md bg-graph">
         <div className=" bg-[#000000b4]">
           <div className="bg-black">
             <h6 className="text-center  text-white contact-heading">

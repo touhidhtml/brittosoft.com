@@ -1,79 +1,63 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import PriceTable from "../Components/PricingComponents/PriceTable";
 import QuantitySelector from "../Components/PricingComponents/QuantitySelector";
 import RadioInput from "../Components/PricingComponents/RadioInput";
-import SelectDate from "../Components/PricingComponents/SelectDate";
-import SelectService from "../Components/PricingComponents/SelectService";
-
-const services = [
-  {
-    name: "Development",
-    basePrice: 0,
-    imageUrl:
-      "https://img.freepik.com/free-vector/tiny-developers-programming-website-internet-platform-flat-vector-illustration-cartoon-programmers-near-screen-with-open-code-script-software-development-digital-technology-concept_74855-10168.jpg",
-  },
-  {
-    name: "Web Design",
-    basePrice: 500,
-    imageUrl:
-      "https://img.freepik.com/free-vector/app-development-concept-design_23-2148670525.jpg",
-  },
-  {
-    name: "Web Development",
-    basePrice: 1000,
-    imageUrl:
-      "https://img.freepik.com/free-vector/gradient-responsive-website-design_23-2149565897.jpg",
-  },
-  {
-    name: "WordPress Bug Fixing",
-    basePrice: 300,
-    imageUrl:
-      "https://img.freepik.com/free-vector/abstract-creative-homepage-illustration_23-2149236243.jpg",
-  },
-  {
-    name: "WordPress Development",
-    basePrice: 800,
-    imageUrl:
-      "https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg",
-  },
-];
+// import DateRangeSelector from "../Components/PricingComponents/DateRangeSelector";
+import InputSelect from "../Components/PricingComponents/InputSelect";
 
 const Pricing = () => {
-  const [service, setService] = useState(services[0].name);
-  const [fromDate, setFromDate] = useState("");
-  const [toDate, setToDate] = useState("");
-  const [complexity, setComplexity] = useState("Standard");
+  const [services, setServices] = useState([]);
+  const [service, setService] = useState("");
+  const [category, setCategory] = useState("");
+  const [turnaroundDays, setTurnaroundDays] = useState("");
+  // const [fromDate, setFromDate] = useState("");
+  // const [toDate, setToDate] = useState("");
+  const [radioinput, setradioinput] = useState("Standard");
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    axios
+      .get("./services.json")
+      .then((response) => {
+        setServices(response.data);
+        setService(response.data[0].name); // Set default service on load
+      })
+      .catch((error) => console.error("Error fetching services:", error));
+  }, []);
+
   const selectedService = services.find((s) => s.name === service);
+  const selectedCategory = selectedService?.categories.find(
+    (c) => c.name === category
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Calculate days
-    const from = new Date(fromDate);
-    const to = new Date(toDate);
-    const turnaroundDays = Math.ceil((to - from) / (1000 * 60 * 60 * 24));
+    // const from = new Date(fromDate);
+    // const to = new Date(toDate);
+    // const turnaroundDays = Math.ceil((to - from) / (1000 * 60 * 60 * 24));
 
-    let basePrice = selectedService?.basePrice || 0;
+    let basePrice = selectedCategory?.basePrice || 0;
 
-    // Adjust base price based on complexity
-    if (complexity === "Basic") {
+    // Adjust base price based on radioinput
+    if (radioinput === "Basic") {
       basePrice *= 1;
-    } else if (complexity === "Standard") {
+    } else if (radioinput === "Standard") {
       basePrice *= 2;
-    } else if (complexity === "Premium") {
+    } else if (radioinput === "Premium") {
       basePrice *= 3;
     }
 
     // Adjust price based on turnaround time
-    if (turnaroundDays <= 7) {
+    if (turnaroundDays <= 3) {
       basePrice *= 1.2;
-    } else if (turnaroundDays < 30 && turnaroundDays > 7) {
+    } else if (turnaroundDays < 7 && turnaroundDays > 3) {
       basePrice *= 0.8;
-    } else if (turnaroundDays > 30) {
+    } else if (turnaroundDays < 30 && turnaroundDays > 7) {
       basePrice *= 0.6;
     }
 
@@ -91,48 +75,75 @@ const Pricing = () => {
             Our Pricing
           </h6>
           <p className="mb-8 lg:mb-8 text-center text-gray-400">
-            Select your requirements and see <br className="brm" /> our
+            Select your requirements and see <br className="brm" /> our{" "}
             <br className="br" /> service pricing to get started
           </p>
         </div>
         <div className="grid gap-8 lg:grid-cols-2 grid-cols-1 w-full">
           <div>
-            <div className="w-full h-full rounded-lg shadow">
-              <div className="flex flex-col justify-between">
-                <a href="#">
-                  <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    {selectedService.name}
-                  </h5>
-                </a>
-                <p className="mb-3 font-normal lg:w-[500px] overflow-hidden text-gray-700 dark:text-gray-400">
-                Boost your business with our {selectedService.name} service
-                </p>
-                <img
-                  className=" h-[300px] w-full lg:w-[500px!important] serviceimage"
-                  src={selectedService.imageUrl}
-                  alt={selectedService.name}
-                />
+            {selectedService && (
+              <div className="w-full h-full rounded-lg shadow">
+                <div className="flex flex-col justify-between">
+                  <a href="#">
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {selectedService.name}
+                    </h5>
+                  </a>
+                  <p className="mb-3 font-normal lg:w-[500px] overflow-hidden text-gray-700 dark:text-gray-400">
+                    Boost your business with our {selectedService.name} service
+                  </p>
+                  <img
+                    className="h-[300px] w-full lg:w-[500px!important] serviceimage"
+                    src={selectedService.imageUrl}
+                    alt={selectedService.name}
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <form
             onSubmit={handleSubmit}
             className="flex flex-col justify-between bg-black gap-8"
           >
             <div className="input-fields flex flex-col justify-between">
-              <SelectService
+              {/* Service Selection */}
+              <InputSelect
                 value={service}
-                onChange={(e) => setService(e.target.value)}
+                placeholder="Select Service"
+                onChange={(e) => {
+                  setService(e.target.value);
+                  setCategory(""); // Reset category when a new service is selected
+                }}
+                services={services.map((s) => s.name)} // Pass service names as options
               />
-              <SelectDate
+
+              {/* Conditionally render category selector after service is selected */}
+              {selectedService && selectedService.categories && (
+                <div className="mt-8">
+                  <InputSelect
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                    services={selectedService.categories.map((c) => c.name)} // Pass category names as options
+                    placeholder="Select Category" // Optional placeholder text
+                  />
+                </div>
+              )}
+
+              {/* <DateRangeSelector
                 fromDate={fromDate}
                 toDate={toDate}
                 setFromDate={setFromDate}
                 setToDate={setToDate}
-              />
+              /> */}
+              {/* <RadioInput
+                options={["Basic", "Standard", "Premium"]}
+                radioinput={turnaroundDays}
+                setradioinput={setTurnaroundDays}
+              /> */}
               <RadioInput
-                complexity={complexity}
-                setComplexity={setComplexity}
+                options={["1-3", "4-7", "8-30"]}
+                radioinput={radioinput}
+                setradioinput={setradioinput}
               />
               <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
             </div>
@@ -150,11 +161,12 @@ const Pricing = () => {
         {submitted && (
           <PriceTable
             service={service}
+            category={category}
             turnaroundTime={`${
               Math.abs(new Date(toDate) - new Date(fromDate)) /
               (1000 * 60 * 60 * 24)
             } days`}
-            complexity={complexity}
+            radioinput={radioinput}
             quantity={quantity}
             price={price}
           />
