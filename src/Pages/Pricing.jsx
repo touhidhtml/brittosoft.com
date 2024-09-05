@@ -11,7 +11,6 @@ const Pricing = () => {
   const [service, setService] = useState("");
   const [category, setCategory] = useState("");
   const [turnaroundDays, setTurnaroundDays] = useState("");
-
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(null);
   const [submitted, setSubmitted] = useState(false);
@@ -78,11 +77,11 @@ const Pricing = () => {
                     </p>
                   </div>
                   <div className="border-[1px] border-gray-900 w-full flex justify-center items-center p-4 rounded-lg">
-                  <img
-                    className="h-[300px] w-auto lg:w-[300px!important] serviceimage "
-                    src={selectedService.imageUrl}
-                    alt={selectedService.name}
-                  />
+                    <img
+                      className="h-[300px] w-auto lg:w-[300px!important] serviceimage "
+                      src={selectedService.imageUrl}
+                      alt={selectedService.name}
+                    />
                   </div>
                 </div>
               </div>
@@ -90,7 +89,7 @@ const Pricing = () => {
           </div>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col justify-between bg-black gap-8"
+            className="flex flex-col justify-end bg-black gap-8"
           >
             <div className="input-fields gp-8 flex flex-col justify-between">
               {/* Service Selection */}
