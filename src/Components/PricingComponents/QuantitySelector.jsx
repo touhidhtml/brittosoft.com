@@ -14,7 +14,6 @@ const QuantitySelector = ({ quantity, setQuantity }) => {
 
   return (
     <div className="flex flex-col gap-2">
-      <div>Select Quantity</div>
       <div className="flex items-center space-x-4">
         {/* Decrease button */}
         <div 

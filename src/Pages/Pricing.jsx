@@ -3,7 +3,6 @@ import axios from "axios";
 import PriceTable from "../Components/PricingComponents/PriceTable";
 import QuantitySelector from "../Components/PricingComponents/QuantitySelector";
 import RadioInput from "../Components/PricingComponents/RadioInput";
-// import DateRangeSelector from "../Components/PricingComponents/DateRangeSelector";
 import InputSelect from "../Components/PricingComponents/InputSelect";
 
 const Pricing = () => {
@@ -11,19 +10,18 @@ const Pricing = () => {
   const [service, setService] = useState("");
   const [category, setCategory] = useState("");
   const [turnaroundDays, setTurnaroundDays] = useState("");
-  // const [fromDate, setFromDate] = useState("");
-  // const [toDate, setToDate] = useState("");
-  const [radioinput, setradioinput] = useState("Standard");
+
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(null);
   const [submitted, setSubmitted] = useState(false);
-
+  
+/* Get data form json file using axios--------- */
   useEffect(() => {
     axios
       .get("./services.json")
       .then((response) => {
         setServices(response.data);
-        setService(response.data[0].name); // Set default service on load
+        setService(response.data[0].name);
       })
       .catch((error) => console.error("Error fetching services:", error));
   }, []);
@@ -35,29 +33,13 @@ const Pricing = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Calculate days
-    // const from = new Date(fromDate);
-    // const to = new Date(toDate);
-    // const turnaroundDays = Math.ceil((to - from) / (1000 * 60 * 60 * 24));
-
     let basePrice = selectedCategory?.basePrice || 0;
-
-    // Adjust base price based on radioinput
-    if (radioinput === "Basic") {
-      basePrice *= 1;
-    } else if (radioinput === "Standard") {
-      basePrice *= 2;
-    } else if (radioinput === "Premium") {
-      basePrice *= 3;
-    }
-
     // Adjust price based on turnaround time
-    if (turnaroundDays <= 3) {
+    if (turnaroundDays == "1-3") {
       basePrice *= 1.2;
-    } else if (turnaroundDays < 7 && turnaroundDays > 3) {
+    } else if (turnaroundDays == "4-7") {
       basePrice *= 0.8;
-    } else if (turnaroundDays < 30 && turnaroundDays > 7) {
+    } else if (turnaroundDays == "8-30") {
       basePrice *= 0.6;
     }
 
@@ -105,46 +87,39 @@ const Pricing = () => {
             onSubmit={handleSubmit}
             className="flex flex-col justify-between bg-black gap-8"
           >
-            <div className="input-fields flex flex-col justify-between">
+            <div className="input-fields gp-8 flex flex-col justify-between">
               {/* Service Selection */}
               <InputSelect
                 value={service}
                 placeholder="Select Service"
                 onChange={(e) => {
                   setService(e.target.value);
-                  setCategory(""); // Reset category when a new service is selected
+                  setCategory("");
                 }}
-                services={services.map((s) => s.name)} // Pass service names as options
+                services={services.map((s) => s.name)}
               />
 
-              {/* Conditionally render category selector after service is selected */}
+              {/* Service catagory selection */}
               {selectedService && selectedService.categories && (
-                <div className="mt-8">
+                <div className="my-8">
                   <InputSelect
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    services={selectedService.categories.map((c) => c.name)} // Pass category names as options
-                    placeholder="Select Category" // Optional placeholder text
+                    services={selectedService.categories.map((c) => c.name)}
+                    placeholder="Select Category"
                   />
                 </div>
               )}
 
-              {/* <DateRangeSelector
-                fromDate={fromDate}
-                toDate={toDate}
-                setFromDate={setFromDate}
-                setToDate={setToDate}
-              /> */}
-              {/* <RadioInput
-                options={["Basic", "Standard", "Premium"]}
-                radioinput={turnaroundDays}
-                setradioinput={setTurnaroundDays}
-              /> */}
-              <RadioInput
-                options={["1-3", "4-7", "8-30"]}
-                radioinput={radioinput}
-                setradioinput={setradioinput}
-              />
+              {/* Input Date */}
+              <div className="mb-8">
+                <RadioInput
+                  options={["1-3", "4-7", "8-30"]}
+                  radioinput={turnaroundDays}
+                  setradioinput={setTurnaroundDays}
+                />
+              </div>
+              {/* Select Quantity of website */}
               <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
             </div>
             <button
@@ -162,11 +137,7 @@ const Pricing = () => {
           <PriceTable
             service={service}
             category={category}
-            turnaroundTime={`${
-              Math.abs(new Date(toDate) - new Date(fromDate)) /
-              (1000 * 60 * 60 * 24)
-            } days`}
-            radioinput={radioinput}
+            turnaroundTime={`${turnaroundDays} days`}
             quantity={quantity}
             price={price}
           />

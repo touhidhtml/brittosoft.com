@@ -11,7 +11,6 @@ const RadioInput = ({ options, radioinput, setradioinput }) => {
 
   return (
     <div className="flex flex-col gap-2">
-      <div>Select Option</div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {options.map((option) => (
           <label

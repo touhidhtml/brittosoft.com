@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const PriceTable = ({ service, turnaroundTime, radioinput, quantity, price }) => {
+const PriceTable = ({ service, turnaroundTime, quantity, price, category }) => {
   return (
     <div>
       <div className="relative overflow-x-auto">
@@ -13,7 +13,7 @@ const PriceTable = ({ service, turnaroundTime, radioinput, quantity, price }) =>
                 Turnaround Time
               </th>
               <th scope="col" className="px-6 py-3">
-                radioinput
+                Service Type
               </th>
               <th scope="col" className="px-6 py-3">
                 Quantity
@@ -35,7 +35,7 @@ const PriceTable = ({ service, turnaroundTime, radioinput, quantity, price }) =>
                 {service}
               </th>
               <td className="px-6 py-4">{turnaroundTime}</td>
-              <td className="px-6 py-4">{radioinput}</td>
+              <td className="px-6 py-4">{category}</td>
               <td className="px-6 py-4">{quantity}</td>
               <td className="px-6 py-4">${price}</td>
               <td className="px-6 py-4"><button className="px-4 bg-blue-700 py-1 rounded-lg text-white">Proceed</button></td>
