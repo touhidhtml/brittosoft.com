@@ -1,24 +1,28 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
-const RadioInput = () => {
+const RadioInput = ({ complexity, setComplexity }) => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
+    setComplexity(event.target.value)
   };
 
   return (
-    <div className="">
-      <div className="grid grid-cols-3 gap-4">
+    <div className="flex flex-col gap-2">
+      <div>Select Complexity</div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* Option 1 */}
+
         <label
-          className={`shadow-sm  text-lg text-center rounded-lg  block  py-2 px-10  bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-
-            light outline-none ${selectedOption === "option1" ? "bg-blue-500 text-white" : "bg-[#18181B] text-white"}`}
+          className={`shadow-sm  text-lg text-center rounded-lg  block  py-2 px-10  cursor-pointer bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-
+            light outline-none ${selectedOption === "Basic" ? "bg-blue-500 text-white" : "bg-[#18181B] text-white hover:bg-gray-800"}`}
         >
           <input
             type="radio"
-            value="option1"
-            checked={selectedOption === "option1"}
+            value="Basic"
+            checked={selectedOption === "Basic" && complexity === "Standard"}
             onChange={handleOptionChange}
             className="hidden"
           />
@@ -27,13 +31,13 @@ const RadioInput = () => {
 
         {/* Option 2 */}
         <label
-          className={`shadow-sm  text-lg text-center rounded-lg  block  py-2 px-10  bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-
-            light outline-none ${selectedOption === "option2" ? "bg-blue-500 text-white" : "bg-[#18181B] text-white"}`}
+          className={`shadow-sm  text-lg text-center rounded-lg  block  py-2 px-10  cursor-pointer bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-
+            light outline-none ${selectedOption === "Standard" ? "bg-blue-500 text-white" : "bg-[#18181B] text-white hover:bg-gray-800"}`}
         >
           <input
             type="radio"
-            value="option2"
-            checked={selectedOption === "option2"}
+            value="Standard"
+            checked={selectedOption === "Standard" && complexity === "Standard"}
             onChange={handleOptionChange}
             className="hidden"
           />
@@ -41,13 +45,13 @@ const RadioInput = () => {
         </label>
 
         {/* Option 3 */}
-        <label className={`shadow-sm  text-lg text-center rounded-lg  block  py-2 px-10  bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-
-            light outline-none ${selectedOption === "option3" ? "bg-blue-500 text-white" : "bg-[#18181B] text-white"}`}
+        <label className={`shadow-sm  text-lg text-center rounded-lg  block  py-2 px-10  cursor-pointer bg-[#18181B] border-none text-white focus:ring-primary-500 shadow-sm-
+            light outline-none ${selectedOption === "Premium" ? "bg-blue-500 text-white" : "bg-[#18181B] text-white hover:bg-gray-800"}`}
         >
           <input
             type="radio"
-            value="option3"
-            checked={selectedOption === "option3"}
+            value="Premium"
+            checked={selectedOption === "Premium" && complexity === "Premium"}
             onChange={handleOptionChange}
             className="hidden"
           />
@@ -59,3 +63,9 @@ const RadioInput = () => {
 };
 
 export default RadioInput;
+
+
+
+
+
+
