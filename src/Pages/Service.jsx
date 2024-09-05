@@ -56,10 +56,17 @@ const Service = () => {
 
       <div className="flex flex-wrap justify-center mt-10">
         {/* card-1----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm w-[300px] lg:w-[400px]">
           <div className="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div className="flex items-center mb-10">
               <div className="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
+=======
+        <div class="p-4 max-w-sm w-[330px] lg:w-[400px]">
+          <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
+            <div class="flex items-center mb-10">
+              <div class="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
                 <Telescope size={50} color="#5148D9" />
               </div>
             </div>
@@ -76,10 +83,17 @@ const Service = () => {
         </div>
 
         {/* card-2----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm w-[300px] lg:w-[400px]">
           <div className="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div className="flex items-center mb-10">
               <div className="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
+=======
+        <div class="p-4 max-w-sm w-[330px] lg:w-[400px]">
+          <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
+            <div class="flex items-center mb-10">
+              <div class="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
                 <BlendIcon size={50} color="#5148D9"/>
               </div>
             </div>
@@ -95,10 +109,17 @@ const Service = () => {
         </div>
 
         {/* card-3----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm w-[300px] lg:w-[400px]">
           <div className="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div className="flex items-center mb-10">
               <div className="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
+=======
+        <div class="p-4 max-w-sm w-[330px] lg:w-[400px]">
+          <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
+            <div class="flex items-center mb-10">
+              <div class="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
                 <FolderGit2 size={50} color="#5148D9"/>
               </div>
             </div>
@@ -142,24 +163,38 @@ const Service = () => {
       
       <div className="flex flex-wrap justify-center mt-10">
         {/* card-1----- */}
+<<<<<<< HEAD
         <div className="p-4 w-[300px] lg:w-[500px]">
           <div className="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div className="flex items-center justify-center mb-4">
               <div className="lg:w-60  w-40 inline-flex items-center justify-center flex-shrink-0">
+=======
+        <div class="p-4 w-[330px] lg:w-[500px]">
+          <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class="lg:w-60  w-40 inline-flex items-center justify-center flex-shrink-0">
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
                 <img src="/public/all-img/growth.png"  alt="" />
               </div>
             </div>
             <span className="bg-gradient-to-b text-center lg:text-xl text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Innovative Solutions for Unstoppable Growth
+              Innovative Solutions for Unstoppable Growt
               </span>
           </div>
         </div>
 
         {/* card-2----- */}
+<<<<<<< HEAD
         <div className="p-4  w-[300px] lg:w-[500px]">
           <div className="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div className="flex items-center justify-center mb-4">
               <div className="lg:w-60  w-40 inline-flex items-center justify-center flex-shrink-0">
+=======
+        <div class="p-4  w-[330px] lg:w-[500px]">
+          <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class="lg:w-60  w-40 inline-flex items-center justify-center flex-shrink-0">
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
                 <img src="/public/all-img/plan.png"  alt="" />
               </div>
             </div>
@@ -193,9 +228,11 @@ const Service = () => {
       </div>
 
       {/* all services------ ---------------------------------*/}
+      
       {/* service row-1 */}
       <div className="flex flex-wrap justify-center mt-10 gap-4">
         {/* card-1----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div className="flex rounded-2xl h-full  p-2  flex-col">
             <div className="flex items-center justify-center mb-4">
@@ -205,6 +242,17 @@ const Service = () => {
             </div>
             <div className="flex flex-col justify-center items-center flex-grow">
               <p className="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+=======
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+          <div class="flex rounded-2xl h-full  p-2  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class="inline-flex items-center justify-center flex-shrink-0 p-6">
+                <img className="lg:w-[200px] w-[150px]" src="/all-img/browser.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[18px] lg:text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
               Website Development 
               </p>
               <p className="leading-relaxed text-white text-[15px] text-center">
@@ -216,6 +264,7 @@ const Service = () => {
         </div>
 
         {/* card-2----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div className="flex rounded-2xl h-full   p-2  flex-col">
             <div className="flex items-center justify-center mb-4">
@@ -226,6 +275,18 @@ const Service = () => {
             <div className="flex flex-col justify-center item-center flex-grow">
               <p className="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
               Ecommerce Solutions 
+=======
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+          <div class="flex rounded-2xl h-full   p-2  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/error.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-between items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[18px] lg:text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Ecommerce Development
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
               </p>
               <p className="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
@@ -236,6 +297,7 @@ const Service = () => {
         </div>
 
         {/* card-3----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div className="flex rounded-2xl h-full   p-2  flex-col">
             <div className="flex items-center justify-center mb-4">
@@ -246,6 +308,18 @@ const Service = () => {
             <div className="flex flex-col justify-between items-center flex-grow">
               <p className="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
               Web Application
+=======
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+          <div class="flex rounded-2xl h-full   p-2  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/error.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-between items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[18px] lg:text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Responsive Web Design 
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
               </p>
               <p className="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
@@ -258,6 +332,7 @@ const Service = () => {
       </div>
 
       {/* service row-2 */}
+<<<<<<< HEAD
       <div className="flex flex-wrap justify-center mt-10 gap-4">
         {/* card-1----- */}
         <div className="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
@@ -270,6 +345,20 @@ const Service = () => {
             <div className="flex flex-col justify-center items-center flex-grow">
               <p className="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
               CMS Solutions
+=======
+      <div class="flex flex-wrap justify-center lg:mt-10 mt-4 gap-4">
+        {/* card-1----- */}
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+          <div class="flex rounded-2xl h-full   p-2  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/computer-case.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[18px] lg:text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              CMS Development
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
               </p>
               <p className="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
@@ -280,6 +369,7 @@ const Service = () => {
         </div>
 
         {/* card-2----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
           <div className="flex rounded-2xl h-full  p-2  flex-col">
             <div className="flex items-center justify-center mb-4">
@@ -290,6 +380,18 @@ const Service = () => {
             <div className="flex flex-col justify-center items-center flex-grow">
               <p className="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
               Mobile Application
+=======
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
+          <div class="flex rounded-2xl h-full  p-2  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/web-design (1).png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[18px] lg:text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Web Application
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
               </p>
               <p className="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
@@ -300,6 +402,7 @@ const Service = () => {
         </div>
 
         {/* card-3----- */}
+<<<<<<< HEAD
         <div className="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div className="flex rounded-2xl h-full   p-2  flex-col">
             <div className="flex items-center justify-center mb-4">
@@ -310,6 +413,18 @@ const Service = () => {
             <div className="flex flex-col justify-between item-center flex-grow">
               <p className="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
               Wordpress Website
+=======
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
+          <div class="flex rounded-2xl h-full  p-2  flex-col">
+            <div class="flex items-center justify-center mb-4">
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/web-design (1).png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[18px] lg:text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              E-commerce Solution
+>>>>>>> 9b9d044c0a7d0a2019abd8998f010bcd232fb0ec
               </p>
               <p className="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
