@@ -10,7 +10,9 @@ import Service from './Pages/Service';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Pricing from './Pages/Pricing';
+import PrivacyPolicy from './Pages/PrivacyPolyicy';
 import MainLaout from './Components/Layout/MainLaout';
+import TermsAndConditions from './Pages/TermsAndConditions';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/pricing",
         element:  <Pricing/>,
+      },
+      {
+        path: "/pryvacy-policy",
+        element:  <PrivacyPolicy/>,
+      },
+      {
+        path: "/terms-and-conditions",
+        element:  <TermsAndConditions/>,
       },
     ],
   },

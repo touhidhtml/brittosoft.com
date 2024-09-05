@@ -6,7 +6,7 @@ const HeroSection = () => {
     <>
       {/* Hero Section Starts Here------------------------- */}
       <div className="relative">
-        <section className=" z-[999] bg-[#0000005e] ">
+        <section className=" z-[999] bg-[#00000094] ">
           {/* <BlourBackground /> */}
           <VideoBackground />
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
