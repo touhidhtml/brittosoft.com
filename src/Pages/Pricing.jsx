@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import axios from "axios";
 import PriceTable from "../Components/PricingComponents/PriceTable";
@@ -52,7 +53,7 @@ const Pricing = () => {
   return (
     <>
       <section className="py-8 lg:py-0 lg:my-16 px-4 lg:px-0 mx-auto max-w-screen lg:mt-32">
-        <div className="text-center">
+        <div className="text-center pb-8">
           <h6 className="text-center text-white contact-heading">
             Our Pricing
           </h6>
@@ -65,20 +66,24 @@ const Pricing = () => {
           <div>
             {selectedService && (
               <div className="w-full h-full rounded-lg shadow">
-                <div className="flex flex-col justify-between">
-                  <a href="#">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      {selectedService.name}
-                    </h5>
-                  </a>
-                  <p className="mb-3 font-normal lg:w-[500px] overflow-hidden text-gray-700 dark:text-gray-400">
-                    Boost your business with our {selectedService.name} service
-                  </p>
+                <div className="flex flex-col items-center justify-between">
+                  <div>
+                    <a href="#">
+                      <h5 className="text-2xl font-bold tracking-tight text-[#A2A6AD]">
+                        {selectedService.name}
+                      </h5>
+                    </a>
+                    <p className="mb-3 font-normal lg:w-[500px] overflow-hidden dark:text-gray-400">
+                      {selectedService.description}
+                    </p>
+                  </div>
+                  <div className="border-[1px] border-gray-900 w-full flex justify-center items-center p-4 rounded-lg">
                   <img
-                    className="h-[300px] w-full lg:w-[500px!important] serviceimage"
+                    className="h-[300px] w-auto lg:w-[300px!important] serviceimage "
                     src={selectedService.imageUrl}
                     alt={selectedService.name}
                   />
+                  </div>
                 </div>
               </div>
             )}

@@ -1,109 +1,108 @@
 [
-    {
-      "name": "Website Development",
-      "imageUrl": "https://img.freepik.com/free-vector/app-development-concept-design_23-2148670525.jpg",
-      "description": "We offer comprehensive website development services.",
-      "categories": [
-        {
-          "name": "Front End",
-          "basePrice": 500
-        },
-        {
-          "name": "Back End",
-          "basePrice": 600
-        },
-        {
-          "name": "Bug Fixing",
-          "basePrice": 600
-        }
-      ]
-    },
-    {
-      "name": "E-commerce Solutions",
-      "imageUrl": "https://img.freepik.com/free-vector/gradient-responsive-website-design_23-2149565897.jpg",
-      "description": "We provide advanced e-commerce solutions.",
-      "categories": [
-        {
-          "name": "Development",
-          "basePrice": 1000
-        },
-        {
-          "name": "Bug Fixing",
-          "basePrice": 1500
-        }
-      ]
-    },
-    {
-      "name": "Web Application",
-      "imageUrl": "https://img.freepik.com/free-vector/abstract-creative-homepage-illustration_23-2149236243.jpg",
-      "description": "Custom web applications tailored to your needs.",
-      "categories": [
-        {
-          "name": "ReactJs",
-          "basePrice": 400
-        },
-        {
-          "name": "NextJs",
-          "basePrice": 500
-        },
-        {
-          "name": "TypeScript",
-          "basePrice": 500
-        }
-      ]
-    },
-    {
-      "name": "Mobile Application",
-      "imageUrl": "https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg",
-      "description": "Mobile app development services.",
-      "categories": [
-        {
-          "name": "React Native",
-          "basePrice": 700
-        },
-        {
-          "name": "Flutter",
-          "basePrice": 299
-        }
-      ]
-    },
-    {
-      "name": "WordPress Website",
-      "imageUrl": "https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg",
-      "description": "Create professional WordPress websites.",
-      "categories": [
-        {
-          "name": "Ecommerce",
-          "basePrice": 5345
-        },
-        {
-          "name": "Bug Fixing",
-          "basePrice": 6453
-        },
-        {
-          "name": "Landing Page",
-          "basePrice": 645645
-        }
-      ]
-    },
-    {
-      "name": "CMS Solutions",
-      "imageUrl": "https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg",
-      "description": "Get CMS solutions for your business.",
-      "categories": [
-        {
-          "name": "wordpress",
-          "basePrice": 3453
-        },
-        {
-          "name": "shopify",
-          "basePrice": 23546
-        },
-        {
-          "name": "Joomla",
-          "basePrice": 23546
-        }
-      ]
-    }
-  ]
-  
+  {
+    "name": "Website Development",
+    "imageUrl": "./all-img/browser.png",
+    "description": "Create visually stunning, user-friendly websites that effectively communicate your brand's essence.",
+    "categories": [
+      {
+        "name": "Front End",
+        "basePrice": 500
+      },
+      {
+        "name": "Back End",
+        "basePrice": 600
+      },
+      {
+        "name": "Bug Fixing",
+        "basePrice": 600
+      }
+    ]
+  },
+  {
+    "name": "E-commerce Solutions",
+    "imageUrl": "./all-img/computer.png",
+    "description": "We provide advanced e-commerce solutions to help you manage, and optimize your online store for maximum sales and growth.",
+    "categories": [
+      {
+        "name": "Development",
+        "basePrice": 1000
+      },
+      {
+        "name": "Bug Fixing",
+        "basePrice": 1500
+      }
+    ]
+  },
+  {
+    "name": "Web Application",
+    "imageUrl": "./all-img/computer-case.png",
+    "description": "Custom web applications tailored to your needs, enhancing functionality and user experience.",
+    "categories": [
+      {
+        "name": "ReactJs",
+        "basePrice": 400
+      },
+      {
+        "name": "NextJs",
+        "basePrice": 500
+      },
+      {
+        "name": "TypeScript",
+        "basePrice": 500
+      }
+    ]
+  },
+  {
+    "name": "Mobile Application",
+    "imageUrl": "./all-img/web-design (1).png",
+    "description": "Mobile app development services to build engaging and functional apps for both iOS and Android platforms.",
+    "categories": [
+      {
+        "name": "React Native",
+        "basePrice": 700
+      },
+      {
+        "name": "Flutter",
+        "basePrice": 299
+      }
+    ]
+  },
+  {
+    "name": "WordPress Website",
+    "imageUrl": "./all-img/laptop.png",
+    "description": "Create professional WordPress websites with customized features and functionalities to meet your business needs.",
+    "categories": [
+      {
+        "name": "Ecommerce",
+        "basePrice": 5345
+      },
+      {
+        "name": "Bug Fixing",
+        "basePrice": 6453
+      },
+      {
+        "name": "Landing Page",
+        "basePrice": 645645
+      }
+    ]
+  },
+  {
+    "name": "CMS Solutions",
+    "imageUrl": "./all-img/computer-case.png",
+    "description": "Get comprehensive CMS solutions for managing your website's content efficiently and effectively.",
+    "categories": [
+      {
+        "name": "WordPress",
+        "basePrice": 3453
+      },
+      {
+        "name": "Shopify",
+        "basePrice": 23546
+      },
+      {
+        "name": "Joomla",
+        "basePrice": 23546
+      }
+    ]
+  }
+]

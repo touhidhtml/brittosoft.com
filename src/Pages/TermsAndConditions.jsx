@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 const TermsAndConditions = () => {
   return (
-    <section className="py-8 lg:py-0 lg:my-16 px-4 lg:px-0 mx-auto max-w-screen-md ">
+    <section className="py-8 lg:py-0 lg:my-32 px-4 lg:px-0 mx-auto max-w-screen-md ">
       <div className="privacyheading">
         <h6 className="text-[50px] font-bold mb-4 text-white">Terms</h6>
       </div>
