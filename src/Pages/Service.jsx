@@ -257,7 +257,7 @@ const Service = () => {
       </div>
 
       {/* service row-2 */}
-      <div class="flex flex-wrap justify-center mt-10 gap-4">
+      <div class="flex flex-wrap justify-center lg:mt-10 mt-4 gap-4">
         {/* card-1----- */}
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
