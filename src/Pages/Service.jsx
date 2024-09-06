@@ -55,7 +55,7 @@ const Service = () => {
 
       <div class="flex flex-wrap justify-center mt-10">
         {/* card-1----- */}
-        <div class="p-4 max-w-sm w-[300px] lg:w-[400px]">
+        <div class="p-4 max-w-sm w-[330px] lg:w-[400px]">
           <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div class="flex items-center mb-10">
               <div class="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
@@ -75,7 +75,7 @@ const Service = () => {
         </div>
 
         {/* card-2----- */}
-        <div class="p-4 max-w-sm w-[300px] lg:w-[400px]">
+        <div class="p-4 max-w-sm w-[330px] lg:w-[400px]">
           <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div class="flex items-center mb-10">
               <div class="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
@@ -94,7 +94,7 @@ const Service = () => {
         </div>
 
         {/* card-3----- */}
-        <div class="p-4 max-w-sm w-[300px] lg:w-[400px]">
+        <div class="p-4 max-w-sm w-[330px] lg:w-[400px]">
           <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div class="flex items-center mb-10">
               <div class="w-24 h-24 mr-3 inline-flex items-center justify-center rounded-full  bg-[#131313] text-white flex-shrink-0">
@@ -141,7 +141,7 @@ const Service = () => {
       
       <div class="flex flex-wrap justify-center mt-10">
         {/* card-1----- */}
-        <div class="p-4 w-[300px] lg:w-[500px]">
+        <div class="p-4 w-[330px] lg:w-[500px]">
           <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class="lg:w-60  w-40 inline-flex items-center justify-center flex-shrink-0">
@@ -149,13 +149,13 @@ const Service = () => {
               </div>
             </div>
             <span className="bg-gradient-to-b text-center lg:text-xl text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Innovative Solutions for Unstoppable Growth
+              Innovative Solutions for Unstoppable Growt
               </span>
           </div>
         </div>
 
         {/* card-2----- */}
-        <div class="p-4  w-[300px] lg:w-[500px]">
+        <div class="p-4  w-[330px] lg:w-[500px]">
           <div class="flex rounded-2xl h-full  bg-[#161616] p-8  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class="lg:w-60  w-40 inline-flex items-center justify-center flex-shrink-0">
@@ -192,14 +192,15 @@ const Service = () => {
       </div>
 
       {/* all services------ ---------------------------------*/}
+      
       {/* service row-1 */}
       <div class="flex flex-wrap justify-center mt-10 gap-4">
         {/* card-1----- */}
-        <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full  p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class="inline-flex items-center justify-center flex-shrink-0 p-6">
-                <img className="lg:w-[200px] w-[150px]" src="/public/all-img/browser.png" alt="" />
+                <img className="lg:w-[200px] w-[150px]" src="/all-img/browser.png" alt="" />
               </div>
             </div>
             <div class="flex flex-col justify-center items-center flex-grow">
@@ -215,11 +216,11 @@ const Service = () => {
         </div>
 
         {/* card-2----- */}
-        <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/error.png" alt="" />
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/error.png" alt="" />
               </div>
             </div>
             <div class="flex flex-col justify-between items-center flex-grow">
@@ -235,11 +236,11 @@ const Service = () => {
         </div>
 
         {/* card-3----- */}
-        <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/error.png" alt="" />
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/error.png" alt="" />
               </div>
             </div>
             <div class="flex flex-col justify-between items-center flex-grow">
@@ -259,11 +260,11 @@ const Service = () => {
       {/* service row-2 */}
       <div class="flex flex-wrap justify-center lg:mt-10 mt-4 gap-4">
         {/* card-1----- */}
-        <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/computer-case.png" alt="" />
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/computer-case.png" alt="" />
               </div>
             </div>
             <div class="flex flex-col justify-center items-center flex-grow">
@@ -279,11 +280,11 @@ const Service = () => {
         </div>
 
         {/* card-2----- */}
-        <div class="p-4 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full  p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/web-design (1).png" alt="" />
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/web-design (1).png" alt="" />
               </div>
             </div>
             <div class="flex flex-col justify-center items-center flex-grow">
@@ -299,11 +300,11 @@ const Service = () => {
         </div>
 
         {/* card-3----- */}
-        <div class="p-4 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
+        <div class="p-3 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full  p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
               <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/web-design (1).png" alt="" />
+              <img className="lg:w-[200px] w-[150px]" src="/all-img/web-design (1).png" alt="" />
               </div>
             </div>
             <div class="flex flex-col justify-center items-center flex-grow">
