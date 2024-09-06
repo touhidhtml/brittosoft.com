@@ -1,5 +1,5 @@
-import { Loader } from "lucide-react";
 import { useState } from "react";
+import SectionHeading from "../Comoncomponents/SectionHeading";
 
 const OurService = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -39,17 +39,9 @@ const OurService = () => {
   );
   return (
     <div className="aboutsection flex flex-col items-center bg-black py-20">
-      <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center border rounded-lg">
-        <img
-          className="w-[30px] rounded-full"
-          src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-          alt=""
-        />
-        <div className="bg-gradient-to-b lg:text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
-          About Us
-        </div>{" "}
-        <Loader />
-      </div>
+      
+      {/*Section heading--------------- */}
+      <SectionHeading title="Our Services" />
 
       <section className="bg-transparent z-1  ourservice-acordion-container">
         <div className="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -66,7 +58,6 @@ const OurService = () => {
         </div>
 
         <div className="serviceacordionsection ourservice-acordion-container px-6">
-
           {/* Accordion Item 1 */}
           <div className="border-b border-slate-200">
             <button
@@ -142,9 +133,7 @@ const OurService = () => {
               </div>
             </div>
           </div>
-
         </div>
-        
       </section>
     </div>
   );

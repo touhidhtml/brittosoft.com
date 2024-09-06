@@ -1,8 +1,8 @@
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const Header = () => {
+const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -21,7 +21,7 @@ const Header = () => {
               className="flex items-center space-x-3 rtl:space-x-reverse pr-2 md:hidden lg:hidden"
             >
               <img
-                src="https://i.postimg.cc/PqSKhngv/Britto.png"
+                src="./all-img/Britto.png"
                 className="h-8"
                 alt="Britto Soft Logo"
               />
@@ -100,13 +100,12 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-[#5148D9] lg:px-4 py-1 px-2 rounded-[20px]"
-                    target="_blank"
-                    href="https://facebook.com"
+                    to={"/pricing"}
                   >
                     Set Meeting
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -161,16 +160,15 @@ const Header = () => {
                       Contact
                     </NavLink>
                   </li>
-                  <li>
-                    <a
+                  {/* <li>
+                    <NavLink
                       className="bg-[#5148D9] px-4 py-2 rounded-[20px] text-white"
-                      target="_blank"
-                      href="https://facebook.com"
+                      to={"/pricing"}
                       onClick={toggleMobileMenu}
                     >
                       Set Meeting
-                    </a>
-                  </li>
+                    </NavLink>
+                  </li> */}
                 </ul>
               </div>
             )}
@@ -181,4 +179,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

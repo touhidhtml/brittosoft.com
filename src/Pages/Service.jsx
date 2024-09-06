@@ -1,15 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
-import { BlendIcon, FolderGit2, Loader, Telescope } from "lucide-react";
+import { BlendIcon, FolderGit2, Telescope } from "lucide-react";
 import VideoBackground from "../Components/BlourBackground/VideoBackground";
 import Card from "../Components/Card/Card";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import SectionHeading from "../Components/Comoncomponents/SectionHeading";
 const Service = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
     axios
-      .get("./services.json")
+      .get("./data/services.json")
       .then((response) => {
         setServices(response.data);
       })
@@ -47,16 +47,8 @@ const Service = () => {
       {/* our process--- */}
       <div className="lg:mb-40 mb-20">
         <div className="aboutsection flex flex-col items-center ">
-          <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center mb-8 border rounded-lg">
-            <img
-              className="w-[30px] rounded-full"
-              src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-              alt=""
-            />
-            <div className="bg-gradient-to-b lg:text-2xl text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Our Process
-            </div>{" "}
-            <Loader className="text-white" />
+          <div className="mb-6">
+            <SectionHeading title="Our Process" />
           </div>
           <span className="lg:text-[35px] text-[20px] text-center text-gray-400">
             Top–notch designs,
@@ -131,17 +123,8 @@ const Service = () => {
       {/* what you will get */}
       <div className="lg:mb-40 mb-20">
         <div className="aboutsection flex flex-col items-center ">
-          <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center mb-6 border rounded-lg">
-            <img
-              className="w-[30px] rounded-full"
-              src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-              alt=""
-            />
-            <div className="bg-gradient-to-b lg:text-2xl text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              What You'll Get
-            </div>
-            <Loader className="text-white" />
-          </div>
+          {/* Section Heading----------- */}
+          <div className="mb-6"><SectionHeading title="What You'll Get" /></div>
           <span className="lg:text-[35px]  p-6 text-[20px] text-center text-gray-400">
             We resolve problems associated with creative procedures.
           </span>
@@ -179,22 +162,12 @@ const Service = () => {
       </div>
       {/* All in one-- */}
       <div className="mb-40">
-        <div className="aboutsection flex flex-col items-center ">
-          <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center mb-6 border rounded-lg">
-            <img
-              className="w-[30px] rounded-full"
-              src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-              alt=""
-            />
-            <div className="bg-gradient-to-b lg:text-2xl text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              All In One Service
-            </div>
-            <Loader className="text-white" />
-          </div>
+        <div className="flex flex-col items-center mb-6">
+          <SectionHeading title="All In One Service" />
         </div>
 
         {/* all services------ ---------------------------------*/}
-        <Card data={services}/>
+        <Card data={services} />
         {/* ------------------------------------------------------ */}
       </div>
     </div>

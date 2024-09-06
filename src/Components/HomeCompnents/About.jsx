@@ -1,20 +1,10 @@
-import { Loader } from "lucide-react";
+import SectionHeading from "../Comoncomponents/SectionHeading";
 
 const About = () => {
     return (
         <div className="aboutsection flex flex-col items-center bg-black py-20">
-        <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center border rounded-lg">
-          <img
-            className="w-[30px] rounded-full"
-            src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-            alt=""
-          />
-          <div className="bg-gradient-to-b lg:text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
-            Our Service
-          </div>{" "}
-          <Loader />
-        </div>
-
+          {/* Section Heading------------------- */}
+          <SectionHeading title="About Us"/>
         <section className="bg-transparent z-1 ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">

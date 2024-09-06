@@ -1,26 +1,16 @@
-import { Loader } from "lucide-react";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaDocker } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaWordpress } from "react-icons/fa";
+import SectionHeading from "../Comoncomponents/SectionHeading";
 
 const INtigrations = () => {
   const items = [
-    FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaDocker
+    FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaWordpress
   ];
 
   return (
     <div>
       <div className="aboutsection flex flex-col items-center bg-black py-20">
-        <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center border rounded-lg">
-          <img
-            className="w-[30px] rounded-full"
-            src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-            alt=""
-          />
-          <div className="bg-gradient-to-b lg:text-2xl from-white to-gray-500 text-transparent font-bold bg-clip-text">
-            Integrations
-          </div>{" "}
-          <Loader />
-        </div>
-
+        <SectionHeading title={"Integrations"}/>
+        
         <section className="bg-transparent z-1 ourservice-acordion-container">
           <div className="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <h2 className="mb-4 font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
@@ -55,6 +45,7 @@ const INtigrations = () => {
           </div>
         </section>
       </div>
+      <br /><br /><br />
     </div>
   );
 };

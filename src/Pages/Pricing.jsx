@@ -18,7 +18,7 @@ const Pricing = () => {
   /* Get data form json file using axios--------- */
   useEffect(() => {
     axios
-      .get("./services.json")
+      .get("./data/services.json")
       .then((response) => {
         setServices(response.data);
         setService(response.data[0].name);

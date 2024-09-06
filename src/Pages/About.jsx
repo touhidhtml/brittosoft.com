@@ -1,6 +1,5 @@
-import { Loader } from "lucide-react";
 import VideoBackground from "../Components/BlourBackground/VideoBackground";
-// import OurTeam from "../Components/OurTeam/OurTeam";
+import SectionHeading from "../Components/Comoncomponents/SectionHeading";
 
 const About = () => {
   return (
@@ -21,18 +20,8 @@ const About = () => {
       {/* intriducing britto------- */}
      <div className="bg-[#00000094]"> 
       <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-[80rem] lg:py-24 bg-[#0D0D0D] mb-10">
-        <div className="aboutsection flex flex-col items-center">
-          <div className="aboutheading flex gap-2 bg-[#1F1F1F] py-2 px-10 justify-center items-center mb-12 border rounded-lg">
-            <img
-              className="w-[30px] rounded-full"
-              src="https://i.postimg.cc/NLqJRSWb/Britto-Soft.jpg"
-              alt=""
-            />
-            <div className="bg-gradient-to-b lg:text-2xl text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Introducing Britto Soft
-            </div>{" "}
-            <Loader className="text-white" />
-          </div>
+        <div className="aboutsection flex flex-col items-center mb-12">
+          <SectionHeading title={"Introducing Britto Soft"}/>
         </div>
 
         <div className="flex w-full mx-auto text-left">
