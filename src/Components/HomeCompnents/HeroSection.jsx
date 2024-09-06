@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Hero Section Starts Here------------------------- */}
-      <div className="relative">
+      <div className="relative pt-20">
         <section className=" z-[999] bg-[#0000000e] ">
           {/* <BlourBackground /> */}
           <VideoBackground />
