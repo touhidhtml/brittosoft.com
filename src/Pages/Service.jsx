@@ -198,15 +198,15 @@ const Service = () => {
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full  p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
-              <div class="inline-flex items-center justify-center flex-shrink-0">
-                <img className="lg:w-[200px] w-[150px]" src="/public/all-img/s-1.png" alt="" />
+              <div class="inline-flex items-center justify-center flex-shrink-0 p-6">
+                <img className="lg:w-[200px] w-[150px]" src="/public/all-img/browser.png" alt="" />
               </div>
             </div>
-            <div class="flex flex-col justify-between flex-grow">
-              <p class="leading-relaxed text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Website Development Services
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Website Development 
               </p>
-              <p class="leading-relaxed text-white text-[15px] pr-9">
+              <p class="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
                 we’re here to listen.
               </p>
@@ -218,15 +218,15 @@ const Service = () => {
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
-              <div class=" inline-flex items-center justify-center flex-shrink-0">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/s-2.png" alt="" />
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/computer.png" alt="" />
               </div>
             </div>
-            <div class="flex flex-col justify-between flex-grow">
-              <p class="leading-relaxed text-[26px] bg-gradient-to-b  text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              E-commerce Development
+            <div class="flex flex-col justify-center item-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Ecommerce Development 
               </p>
-              <p class="leading-relaxed text-white text-[15px] pr-9">
+              <p class="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
                 we’re here to listen.
               </p>
@@ -238,15 +238,15 @@ const Service = () => {
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
-              <div class=" inline-flex items-center justify-center flex-shrink-0">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/s-3.png" alt="" />
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/error.png" alt="" />
               </div>
             </div>
-            <div class="flex flex-col justify-between flex-grow">
-              <p class="leading-relaxed text-[26px] bg-gradient-to-b  text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Responsive Web Design
+            <div class="flex flex-col justify-between items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Responsive Web Design 
               </p>
-              <p class="leading-relaxed text-white text-[15px] pr-9">
+              <p class="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
                 we’re here to listen.
               </p>
@@ -262,15 +262,15 @@ const Service = () => {
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
-              <div class=" inline-flex items-center justify-center flex-shrink-0">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/s-4.png" alt="" />
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/computer-case.png" alt="" />
               </div>
             </div>
-            <div class="flex flex-col justify-between flex-grow">
-              <p class="leading-relaxed text-[26px] bg-gradient-to-b  text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              CMS Development Service
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              CMS Development
               </p>
-              <p class="leading-relaxed text-white text-[15px] pr-9">
+              <p class="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
                 we’re here to listen.
               </p>
@@ -282,15 +282,15 @@ const Service = () => {
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px]  border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full  p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
-              <div class=" inline-flex items-center justify-center flex-shrink-0">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/s-5.png" alt="" />
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/web-design (1).png" alt="" />
               </div>
             </div>
-            <div class="flex flex-col justify-between flex-grow">
-              <p class="leading-relaxed text-[26px] bg-gradient-to-b  text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Website Redesign Service
+            <div class="flex flex-col justify-center items-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              Web Application
               </p>
-              <p class="leading-relaxed text-white text-[15px] pr-9">
+              <p class="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
                 we’re here to listen.
               </p>
@@ -302,15 +302,15 @@ const Service = () => {
         <div class="p-4 max-w-sm lg:w-[400px] w-[300px] border-[1px] border-gray-800 rounded-2xl">
           <div class="flex rounded-2xl h-full   p-2  flex-col">
             <div class="flex items-center justify-center mb-4">
-              <div class=" inline-flex items-center justify-center flex-shrink-0">
-              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/s-6.png" alt="" />
+              <div class=" inline-flex items-center justify-center flex-shrink-0 p-6">
+              <img className="lg:w-[200px] w-[150px]" src="/public/all-img/laptop.png" alt="" />
               </div>
             </div>
-            <div class="flex flex-col justify-between flex-grow">
-              <p class="leading-relaxed text-[26px] bg-gradient-to-b  text-sm from-white to-gray-500 text-transparent font-bold bg-clip-text">
-              Front-end Development
+            <div class="flex flex-col justify-between item-center flex-grow">
+              <p class="leading-relaxed mb-4 text-[26px] bg-gradient-to-b  from-white to-gray-500 text-transparent font-bold bg-clip-text">
+              E-commerce Solution 
               </p>
-              <p class="leading-relaxed text-white text-[15px] pr-9">
+              <p class="leading-relaxed text-white text-[15px] text-center">
                 Choose a plan and share your design project details with us:
                 we’re here to listen.
               </p>
