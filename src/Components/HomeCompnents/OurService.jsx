@@ -64,7 +64,9 @@ const OurService = () => {
             business growth.
           </p>
         </div>
+
         <div className="serviceacordionsection ourservice-acordion-container px-6">
+
           {/* Accordion Item 1 */}
           <div className="border-b border-slate-200">
             <button
@@ -140,7 +142,9 @@ const OurService = () => {
               </div>
             </div>
           </div>
+
         </div>
+        
       </section>
     </div>
   );

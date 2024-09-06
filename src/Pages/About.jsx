@@ -99,7 +99,6 @@ const About = () => {
       </div>
 
       {/* our team --------------------------------*/}
-      {/* <OurTeam/> */}
 
       {/* revolution */}
       <div>
